@@ -1,0 +1,10 @@
+<html>
+<body>
+<h1><a href="/">My Django blog</a></h1>
+{% for post in posts %}
+	<p>published: {{post.published_date}}</p>
+    <h2><a href="">{{ post.title }}</a></h2>
+	<p>{{post.text|linebreaks}}</p>
+{% endfor %}
+</body>
+</html>
